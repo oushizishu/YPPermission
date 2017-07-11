@@ -1,0 +1,16 @@
+PODS:
+  - YPPermission (0.1.0)
+
+DEPENDENCIES:
+  - YPPermission (from `../`)
+
+EXTERNAL SOURCES:
+  YPPermission:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YPPermission: 164c2520b375643cd33b055e08aa1dac255720c4
+
+PODFILE CHECKSUM: c9deaca1a2defe27d4824783c121f496bac8c094
+
+COCOAPODS: 1.2.1

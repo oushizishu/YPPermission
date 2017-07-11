@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0626B7C11A4FE5373619C71CF22FCF3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		13CCDA3503376677064BC0FCEACFE711 /* JLMicrophonePermission.h in Headers */ = {isa = PBXBuildFile; fileRef = BB93294F931F3D4A14074757A5D9A6BF /* JLMicrophonePermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		156D37E18DBC637E8209ACC8646B8A79 /* JLPhotosPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = C01A7C31DF470C86B234F55DC8216229 /* JLPhotosPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1584E5EE577FF12E8A21AC81AE9CD8AF /* YPPermission-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E67ECF8CD97740C15C172E75D996A8 /* YPPermission-dummy.m */; };
+		159C0F861E3187141F69C775FEC40603 /* JLPhotosPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB174D89BDE6C0928DE61062CF86CBC /* JLPhotosPermission.m */; };
+		1785D543E6E0A89EA9C89169B850F1F9 /* Pods-YPPermission_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FD7FDB9D7363E5FB6D3D210678961A /* Pods-YPPermission_Tests-dummy.m */; };
+		1818200B551EB65843F56E35672543D9 /* JLPermissionsCore+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B1BECBD115064BA751BE4DBC7A6F425A /* JLPermissionsCore+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E9660CC24F55464F47CCA824E42E3CA /* JLPermissionsCore.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD09C303F3D5E46455EDC3DA46AF418 /* JLPermissionsCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		247E6C6A41BBE141D89185654159B4B0 /* YPPermission-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1896F2A6F80EEC0A10BF25D51D0F9A95 /* YPPermission-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38433B644A71C7E6307B47F665D1631F /* JLNotificationPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BE4744F30BF35CDB3D7798ABBAC553 /* JLNotificationPermission.m */; };
+		462333D7B06957E86186D9B9B35DE2A2 /* JLLocationPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 904797D01A312146E8DB55A9E273A3B2 /* JLLocationPermission.m */; };
+		628D2529B4FD59A01E7CD616A22A770C /* JLContactsPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2B0FC68963EBE84A09E9D6AF2293F /* JLContactsPermission.m */; };
+		638466BE13E965AA317D9CD4304B152F /* JLCameraPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 6388E8EF125052EBA48793C2BFF347B4 /* JLCameraPermission.m */; };
+		76135B9B9995A1A6900A02EDA845CD57 /* JLContactsPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7D177CA71DB7A09DD7EAA03686F89E /* JLContactsPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A819ECA5C232CD941AC134B064CA9AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7BAE14E069A1799CD8ED3BA3F10BF7C1 /* Pods-YPPermission_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1A1E1BF3D712B12B54AB7E7C1D4D9 /* Pods-YPPermission_Example-dummy.m */; };
+		7D8221DCFC6D0445EB7EEE375BDA9BAC /* Pods-YPPermission_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E21DB906EBF0063A4F28F6D8923E872 /* Pods-YPPermission_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84906245A51E0D3FFD96659725CDAB30 /* JLCalendarPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A09BDD5C5755D8D08FFC9A45AD84121 /* JLCalendarPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F53665F21C9921F90E43C805A40972F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9D13B59A9EC9AA92A801D6DDF515CD54 /* JLPermissionsCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BF7CC905031B5C83D9E5CD57FFEE8A /* JLPermissionsCore.m */; };
+		A157B2D9D5D8C2CA6217CD27CA212FD2 /* JLCalendarPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDCD8704299CD9B6DF6EE88BE56D183 /* JLCalendarPermission.m */; };
+		A592A1AB2D0FC4C3E4407E3E1EDFF794 /* Pods-YPPermission_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A65F29832D524E71A3CFED0161CD6E1B /* Pods-YPPermission_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A757C0B87E6384638EF0526DB482778D /* JLCameraPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = D0E6F7952FB799BFEE9A1FCF26DEAB73 /* JLCameraPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B31F2BAE67BCBBC9AE94BEB0309E3680 /* JLRemindersPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1E97ECDFF90DE21F2B9652909E2E2C /* JLRemindersPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C131E3E86470198C53C2FDD78E30A208 /* JLNotificationPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 72951331D01339738C13E9740781C658 /* JLNotificationPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF16CB20865B2F75FAD81E13396D2022 /* JLMicrophonePermission.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A5ACB2A685A47568C8F23B92417A9E /* JLMicrophonePermission.m */; };
+		E19DBCF8206A9252ECD9145F1EE51F86 /* JLLocationPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = F888C5376BA6CBF609D316263E32546E /* JLLocationPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA1E469456CC680EB6ABAD105AE06F5B /* JLRemindersPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C4846747E83C5D23FA245D682EE4F8 /* JLRemindersPermission.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44B52027B4FC387C6C79A6EDD5323F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC85197D86920C1E8195060FC63E8A27;
+			remoteInfo = YPPermission;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0760D46FECAFD0340BBF04C4FC82B3BE /* Pods-YPPermission_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YPPermission_Example.release.xcconfig"; sourceTree = "<group>"; };
+		111AFD9B90C34F20DD4D2855C77EA6FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		127B7CA4CED17E439538E11A3C00E5A2 /* YPPermission.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YPPermission.xcconfig; sourceTree = "<group>"; };
+		12BE4744F30BF35CDB3D7798ABBAC553 /* JLNotificationPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JLNotificationPermission.m; sourceTree = "<group>"; };
+		12E67ECF8CD97740C15C172E75D996A8 /* YPPermission-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YPPermission-dummy.m"; sourceTree = "<group>"; };
+		150F832BB5E33FEABB0564A643A5E971 /* YPPermission-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YPPermission-prefix.pch"; sourceTree = "<group>"; };
+		15C4846747E83C5D23FA245D682EE4F8 /* JLRemindersPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JLRemindersPermission.m; sourceTree = "<group>"; };
+		1896F2A6F80EEC0A10BF25D51D0F9A95 /* YPPermission-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YPPermission-umbrella.h"; sourceTree = "<group>"; };
+		2DC91AF9E146225A157E18F203EFB35E /* Pods-YPPermission_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YPPermission_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2EB174D89BDE6C0928DE61062CF86CBC /* JLPhotosPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JLPhotosPermission.m; sourceTree = "<group>"; };
+		3939F7741A11CEA474A29F4D91EAE008 /* Pods-YPPermission_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YPPermission_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E21DB906EBF0063A4F28F6D8923E872 /* Pods-YPPermission_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YPPermission_Tests-umbrella.h"; sourceTree = "<group>"; };
+		45EB9958BB8F2CC2883844CB69527342 /* Pods-YPPermission_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YPPermission_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		60B662C2FD011BE2F9888FE7AEC16106 /* Pods-YPPermission_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YPPermission_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6388E8EF125052EBA48793C2BFF347B4 /* JLCameraPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JLCameraPermission.m; sourceTree = "<group>"; };
+		64CEF9D8B54D5F3FB747B8C327FA2D23 /* Pods-YPPermission_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YPPermission_Tests-resources.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		669A24B4B11242E13FAE840722B3F4AA /* Pods-YPPermission_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YPPermission_Example-resources.sh"; sourceTree = "<group>"; };
+		6A09BDD5C5755D8D08FFC9A45AD84121 /* JLCalendarPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JLCalendarPermission.h; sourceTree = "<group>"; };
+		72951331D01339738C13E9740781C658 /* JLNotificationPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JLNotificationPermission.h; sourceTree = "<group>"; };
+		796500E9646A338FE8B80D3C7DAA7C1C /* YPPermission.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YPPermission.framework; path = YPPermission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D7D177CA71DB7A09DD7EAA03686F89E /* JLContactsPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JLContactsPermission.h; sourceTree = "<group>"; };
+		84A2B0FC68963EBE84A09E9D6AF2293F /* JLContactsPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JLContactsPermission.m; sourceTree = "<group>"; };
+		851C1E89F6EEC7A67C34D63FC05FF9AD /* Pods_YPPermission_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YPPermission_Tests.framework; path = "Pods-YPPermission_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1E97ECDFF90DE21F2B9652909E2E2C /* JLRemindersPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JLRemindersPermission.h; sourceTree = "<group>"; };
+		904797D01A312146E8DB55A9E273A3B2 /* JLLocationPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JLLocationPermission.m; sourceTree = "<group>"; };
+		923DF80BA72238133D256AB56A610A98 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F1556BCABBFE4E964DBF0E39EF78FBB /* Pods_YPPermission_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YPPermission_Example.framework; path = "Pods-YPPermission_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FDCD8704299CD9B6DF6EE88BE56D183 /* JLCalendarPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JLCalendarPermission.m; sourceTree = "<group>"; };
+		A0BD41509710B95EBB92C44185191172 /* Pods-YPPermission_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YPPermission_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A4D8E19DBE35CDACB5A1E4D8D2273D05 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A65F29832D524E71A3CFED0161CD6E1B /* Pods-YPPermission_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YPPermission_Example-umbrella.h"; sourceTree = "<group>"; };
+		AC61798FA38D83F2EF5279BFE8768869 /* Pods-YPPermission_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YPPermission_Example.modulemap"; sourceTree = "<group>"; };
+		AC878E21EA6F23BFD682A5E8DDEA109D /* Pods-YPPermission_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YPPermission_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		AEBCF0D963413F4719F3771DB5763881 /* Pods-YPPermission_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YPPermission_Tests.modulemap"; sourceTree = "<group>"; };
+		B1BECBD115064BA751BE4DBC7A6F425A /* JLPermissionsCore+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JLPermissionsCore+Internal.h"; sourceTree = "<group>"; };
+		B5C1A1E1BF3D712B12B54AB7E7C1D4D9 /* Pods-YPPermission_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YPPermission_Example-dummy.m"; sourceTree = "<group>"; };
+		BB93294F931F3D4A14074757A5D9A6BF /* JLMicrophonePermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JLMicrophonePermission.h; sourceTree = "<group>"; };
+		C01A7C31DF470C86B234F55DC8216229 /* JLPhotosPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JLPhotosPermission.h; sourceTree = "<group>"; };
+		C4FD7FDB9D7363E5FB6D3D210678961A /* Pods-YPPermission_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YPPermission_Tests-dummy.m"; sourceTree = "<group>"; };
+		C79C4AF9FC643245D58C420BD4355707 /* Pods-YPPermission_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YPPermission_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D0E6F7952FB799BFEE9A1FCF26DEAB73 /* JLCameraPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JLCameraPermission.h; sourceTree = "<group>"; };
+		D1A5ACB2A685A47568C8F23B92417A9E /* JLMicrophonePermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JLMicrophonePermission.m; sourceTree = "<group>"; };
+		D7BF7CC905031B5C83D9E5CD57FFEE8A /* JLPermissionsCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JLPermissionsCore.m; sourceTree = "<group>"; };
+		DD5350B2DA24B6D4A07C3382B5623293 /* YPPermission.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YPPermission.modulemap; sourceTree = "<group>"; };
+		E97193FCF9F0051E232F17C7B7AFBBCF /* Pods-YPPermission_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YPPermission_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ECD09C303F3D5E46455EDC3DA46AF418 /* JLPermissionsCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JLPermissionsCore.h; sourceTree = "<group>"; };
+		F888C5376BA6CBF609D316263E32546E /* JLLocationPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JLLocationPermission.h; sourceTree = "<group>"; };
+		FA0B699F1B59CE675EAF764F36418D97 /* Pods-YPPermission_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YPPermission_Example-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11B5FA998E5390A668206DA74567E508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0626B7C11A4FE5373619C71CF22FCF3D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B602C1203975999E294BD89F608C1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A819ECA5C232CD941AC134B064CA9AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE0393301436C2583B9F1E2532167B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F53665F21C9921F90E43C805A40972F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A6E76BC7DE2EB5CE9E051D37D0D125 /* YPPermission */ = {
+			isa = PBXGroup;
+			children = (
+				E4DB71B0FB9EA59744E626DD0E01153A /* Support Files */,
+				D6406C425726E0BC8FA145AC219CB8BE /* YPPermission */,
+			);
+			name = YPPermission;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6278D0F8CD8E9000EC407F87A0EE8720 /* Pods-YPPermission_Example */ = {
+			isa = PBXGroup;
+			children = (
+				923DF80BA72238133D256AB56A610A98 /* Info.plist */,
+				AC61798FA38D83F2EF5279BFE8768869 /* Pods-YPPermission_Example.modulemap */,
+				E97193FCF9F0051E232F17C7B7AFBBCF /* Pods-YPPermission_Example-acknowledgements.markdown */,
+				A0BD41509710B95EBB92C44185191172 /* Pods-YPPermission_Example-acknowledgements.plist */,
+				B5C1A1E1BF3D712B12B54AB7E7C1D4D9 /* Pods-YPPermission_Example-dummy.m */,
+				FA0B699F1B59CE675EAF764F36418D97 /* Pods-YPPermission_Example-frameworks.sh */,
+				669A24B4B11242E13FAE840722B3F4AA /* Pods-YPPermission_Example-resources.sh */,
+				A65F29832D524E71A3CFED0161CD6E1B /* Pods-YPPermission_Example-umbrella.h */,
+				2DC91AF9E146225A157E18F203EFB35E /* Pods-YPPermission_Example.debug.xcconfig */,
+				0760D46FECAFD0340BBF04C4FC82B3BE /* Pods-YPPermission_Example.release.xcconfig */,
+			);
+			name = "Pods-YPPermission_Example";
+			path = "Target Support Files/Pods-YPPermission_Example";
+			sourceTree = "<group>";
+		};
+		7215014311070A19DD173FBE6A7C5071 /* Pods-YPPermission_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A4D8E19DBE35CDACB5A1E4D8D2273D05 /* Info.plist */,
+				AEBCF0D963413F4719F3771DB5763881 /* Pods-YPPermission_Tests.modulemap */,
+				45EB9958BB8F2CC2883844CB69527342 /* Pods-YPPermission_Tests-acknowledgements.markdown */,
+				60B662C2FD011BE2F9888FE7AEC16106 /* Pods-YPPermission_Tests-acknowledgements.plist */,
+				C4FD7FDB9D7363E5FB6D3D210678961A /* Pods-YPPermission_Tests-dummy.m */,
+				AC878E21EA6F23BFD682A5E8DDEA109D /* Pods-YPPermission_Tests-frameworks.sh */,
+				64CEF9D8B54D5F3FB747B8C327FA2D23 /* Pods-YPPermission_Tests-resources.sh */,
+				3E21DB906EBF0063A4F28F6D8923E872 /* Pods-YPPermission_Tests-umbrella.h */,
+				3939F7741A11CEA474A29F4D91EAE008 /* Pods-YPPermission_Tests.debug.xcconfig */,
+				C79C4AF9FC643245D58C420BD4355707 /* Pods-YPPermission_Tests.release.xcconfig */,
+			);
+			name = "Pods-YPPermission_Tests";
+			path = "Target Support Files/Pods-YPPermission_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				C42844C7FE9C4ABFF383F9609505DC26 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DE7FBFDC7E28E7D25ACF1C09E836CADE /* Products */,
+				823E4E0BE0D8730FB1DA0358912DC04E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		823E4E0BE0D8730FB1DA0358912DC04E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6278D0F8CD8E9000EC407F87A0EE8720 /* Pods-YPPermission_Example */,
+				7215014311070A19DD173FBE6A7C5071 /* Pods-YPPermission_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A54CFA0BAFF070E1740C54EB6761FDBC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6A09BDD5C5755D8D08FFC9A45AD84121 /* JLCalendarPermission.h */,
+				9FDCD8704299CD9B6DF6EE88BE56D183 /* JLCalendarPermission.m */,
+				D0E6F7952FB799BFEE9A1FCF26DEAB73 /* JLCameraPermission.h */,
+				6388E8EF125052EBA48793C2BFF347B4 /* JLCameraPermission.m */,
+				7D7D177CA71DB7A09DD7EAA03686F89E /* JLContactsPermission.h */,
+				84A2B0FC68963EBE84A09E9D6AF2293F /* JLContactsPermission.m */,
+				F888C5376BA6CBF609D316263E32546E /* JLLocationPermission.h */,
+				904797D01A312146E8DB55A9E273A3B2 /* JLLocationPermission.m */,
+				BB93294F931F3D4A14074757A5D9A6BF /* JLMicrophonePermission.h */,
+				D1A5ACB2A685A47568C8F23B92417A9E /* JLMicrophonePermission.m */,
+				72951331D01339738C13E9740781C658 /* JLNotificationPermission.h */,
+				12BE4744F30BF35CDB3D7798ABBAC553 /* JLNotificationPermission.m */,
+				ECD09C303F3D5E46455EDC3DA46AF418 /* JLPermissionsCore.h */,
+				D7BF7CC905031B5C83D9E5CD57FFEE8A /* JLPermissionsCore.m */,
+				B1BECBD115064BA751BE4DBC7A6F425A /* JLPermissionsCore+Internal.h */,
+				C01A7C31DF470C86B234F55DC8216229 /* JLPhotosPermission.h */,
+				2EB174D89BDE6C0928DE61062CF86CBC /* JLPhotosPermission.m */,
+				8E1E97ECDFF90DE21F2B9652909E2E2C /* JLRemindersPermission.h */,
+				15C4846747E83C5D23FA245D682EE4F8 /* JLRemindersPermission.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C42844C7FE9C4ABFF383F9609505DC26 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18A6E76BC7DE2EB5CE9E051D37D0D125 /* YPPermission */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D6406C425726E0BC8FA145AC219CB8BE /* YPPermission */ = {
+			isa = PBXGroup;
+			children = (
+				A54CFA0BAFF070E1740C54EB6761FDBC /* Classes */,
+			);
+			name = YPPermission;
+			path = YPPermission;
+			sourceTree = "<group>";
+		};
+		DE7FBFDC7E28E7D25ACF1C09E836CADE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F1556BCABBFE4E964DBF0E39EF78FBB /* Pods_YPPermission_Example.framework */,
+				851C1E89F6EEC7A67C34D63FC05FF9AD /* Pods_YPPermission_Tests.framework */,
+				796500E9646A338FE8B80D3C7DAA7C1C /* YPPermission.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4DB71B0FB9EA59744E626DD0E01153A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				111AFD9B90C34F20DD4D2855C77EA6FC /* Info.plist */,
+				DD5350B2DA24B6D4A07C3382B5623293 /* YPPermission.modulemap */,
+				127B7CA4CED17E439538E11A3C00E5A2 /* YPPermission.xcconfig */,
+				12E67ECF8CD97740C15C172E75D996A8 /* YPPermission-dummy.m */,
+				150F832BB5E33FEABB0564A643A5E971 /* YPPermission-prefix.pch */,
+				1896F2A6F80EEC0A10BF25D51D0F9A95 /* YPPermission-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/YPPermission";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7FED5FEEDE60DE3D0338E843CF64407D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84906245A51E0D3FFD96659725CDAB30 /* JLCalendarPermission.h in Headers */,
+				A757C0B87E6384638EF0526DB482778D /* JLCameraPermission.h in Headers */,
+				76135B9B9995A1A6900A02EDA845CD57 /* JLContactsPermission.h in Headers */,
+				E19DBCF8206A9252ECD9145F1EE51F86 /* JLLocationPermission.h in Headers */,
+				13CCDA3503376677064BC0FCEACFE711 /* JLMicrophonePermission.h in Headers */,
+				C131E3E86470198C53C2FDD78E30A208 /* JLNotificationPermission.h in Headers */,
+				1818200B551EB65843F56E35672543D9 /* JLPermissionsCore+Internal.h in Headers */,
+				1E9660CC24F55464F47CCA824E42E3CA /* JLPermissionsCore.h in Headers */,
+				156D37E18DBC637E8209ACC8646B8A79 /* JLPhotosPermission.h in Headers */,
+				B31F2BAE67BCBBC9AE94BEB0309E3680 /* JLRemindersPermission.h in Headers */,
+				247E6C6A41BBE141D89185654159B4B0 /* YPPermission-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37E4DA1072256CA56DFC48F1AA2E6E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A592A1AB2D0FC4C3E4407E3E1EDFF794 /* Pods-YPPermission_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBA92D4012C3E1691FB67F8904137BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8221DCFC6D0445EB7EEE375BDA9BAC /* Pods-YPPermission_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9F290C45D9AAF5D096EC58B9A7F98DDA /* Pods-YPPermission_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9229790525B0A0320F44ED90B1C70C9 /* Build configuration list for PBXNativeTarget "Pods-YPPermission_Tests" */;
+			buildPhases = (
+				76A6CA3052C38D6E62DE6E77FA3DF1C0 /* Sources */,
+				EAE0393301436C2583B9F1E2532167B6 /* Frameworks */,
+				FEBA92D4012C3E1691FB67F8904137BB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-YPPermission_Tests";
+			productName = "Pods-YPPermission_Tests";
+			productReference = 851C1E89F6EEC7A67C34D63FC05FF9AD /* Pods_YPPermission_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF1625F2474E2A38E3A0CF97CC36D3B8 /* Pods-YPPermission_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E40F3F6E345B28F2E1C4B4DF0389A32 /* Build configuration list for PBXNativeTarget "Pods-YPPermission_Example" */;
+			buildPhases = (
+				BFC3370B08DFDAF98EFEB3AEB9A496A8 /* Sources */,
+				B1B602C1203975999E294BD89F608C1D /* Frameworks */,
+				F37E4DA1072256CA56DFC48F1AA2E6E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03B8D945AE8307A086BC30435748D19D /* PBXTargetDependency */,
+			);
+			name = "Pods-YPPermission_Example";
+			productName = "Pods-YPPermission_Example";
+			productReference = 9F1556BCABBFE4E964DBF0E39EF78FBB /* Pods_YPPermission_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC85197D86920C1E8195060FC63E8A27 /* YPPermission */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C0DCAEA24024F448813C04C1DCA1707 /* Build configuration list for PBXNativeTarget "YPPermission" */;
+			buildPhases = (
+				A34759D916BC00587D096182C12F931F /* Sources */,
+				11B5FA998E5390A668206DA74567E508 /* Frameworks */,
+				7FED5FEEDE60DE3D0338E843CF64407D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YPPermission;
+			productName = YPPermission;
+			productReference = 796500E9646A338FE8B80D3C7DAA7C1C /* YPPermission.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DE7FBFDC7E28E7D25ACF1C09E836CADE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF1625F2474E2A38E3A0CF97CC36D3B8 /* Pods-YPPermission_Example */,
+				9F290C45D9AAF5D096EC58B9A7F98DDA /* Pods-YPPermission_Tests */,
+				FC85197D86920C1E8195060FC63E8A27 /* YPPermission */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76A6CA3052C38D6E62DE6E77FA3DF1C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1785D543E6E0A89EA9C89169B850F1F9 /* Pods-YPPermission_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34759D916BC00587D096182C12F931F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A157B2D9D5D8C2CA6217CD27CA212FD2 /* JLCalendarPermission.m in Sources */,
+				638466BE13E965AA317D9CD4304B152F /* JLCameraPermission.m in Sources */,
+				628D2529B4FD59A01E7CD616A22A770C /* JLContactsPermission.m in Sources */,
+				462333D7B06957E86186D9B9B35DE2A2 /* JLLocationPermission.m in Sources */,
+				DF16CB20865B2F75FAD81E13396D2022 /* JLMicrophonePermission.m in Sources */,
+				38433B644A71C7E6307B47F665D1631F /* JLNotificationPermission.m in Sources */,
+				9D13B59A9EC9AA92A801D6DDF515CD54 /* JLPermissionsCore.m in Sources */,
+				159C0F861E3187141F69C775FEC40603 /* JLPhotosPermission.m in Sources */,
+				FA1E469456CC680EB6ABAD105AE06F5B /* JLRemindersPermission.m in Sources */,
+				1584E5EE577FF12E8A21AC81AE9CD8AF /* YPPermission-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC3370B08DFDAF98EFEB3AEB9A496A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BAE14E069A1799CD8ED3BA3F10BF7C1 /* Pods-YPPermission_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03B8D945AE8307A086BC30435748D19D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YPPermission;
+			target = FC85197D86920C1E8195060FC63E8A27 /* YPPermission */;
+			targetProxy = 44B52027B4FC387C6C79A6EDD5323F8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1091DEB6DA65BC5A47737D29256BF06E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DC91AF9E146225A157E18F203EFB35E /* Pods-YPPermission_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YPPermission_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YPPermission_Example/Pods-YPPermission_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YPPermission_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1664ACEFF40E8B44972B90C6E4A9CA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127B7CA4CED17E439538E11A3C00E5A2 /* YPPermission.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YPPermission/YPPermission-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YPPermission/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YPPermission/YPPermission.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YPPermission;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B193C1C38BBA36C085C35531B465079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0760D46FECAFD0340BBF04C4FC82B3BE /* Pods-YPPermission_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YPPermission_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YPPermission_Example/Pods-YPPermission_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YPPermission_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8494B01A8B81C99DFEE764AB278FBF2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127B7CA4CED17E439538E11A3C00E5A2 /* YPPermission.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YPPermission/YPPermission-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YPPermission/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YPPermission/YPPermission.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YPPermission;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3D6A3EA5C87BF059296BB5CBE862CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C79C4AF9FC643245D58C420BD4355707 /* Pods-YPPermission_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YPPermission_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YPPermission_Tests/Pods-YPPermission_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YPPermission_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB7E508D8CE2D02BF3CA5064C1B081B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3939F7741A11CEA474A29F4D91EAE008 /* Pods-YPPermission_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YPPermission_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YPPermission_Tests/Pods-YPPermission_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YPPermission_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E40F3F6E345B28F2E1C4B4DF0389A32 /* Build configuration list for PBXNativeTarget "Pods-YPPermission_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1091DEB6DA65BC5A47737D29256BF06E /* Debug */,
+				7B193C1C38BBA36C085C35531B465079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C0DCAEA24024F448813C04C1DCA1707 /* Build configuration list for PBXNativeTarget "YPPermission" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8494B01A8B81C99DFEE764AB278FBF2F /* Debug */,
+				1664ACEFF40E8B44972B90C6E4A9CA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9229790525B0A0320F44ED90B1C70C9 /* Build configuration list for PBXNativeTarget "Pods-YPPermission_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7E508D8CE2D02BF3CA5064C1B081B9 /* Debug */,
+				A3D6A3EA5C87BF059296BB5CBE862CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
