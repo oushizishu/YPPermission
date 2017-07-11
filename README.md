@@ -1,4 +1,5 @@
 # YPPermission
+基于JLPermission的权限库
 
 [![CI Status](http://img.shields.io/travis/oushizishu/YPPermission.svg?style=flat)](https://travis-ci.org/oushizishu/YPPermission)
 [![Version](https://img.shields.io/cocoapods/v/YPPermission.svg?style=flat)](http://cocoapods.org/pods/YPPermission)
