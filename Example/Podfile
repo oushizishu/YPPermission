@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YPPermission_Example' do
+  pod 'YPPermission', :path => '../'
+
+  target 'YPPermission_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
